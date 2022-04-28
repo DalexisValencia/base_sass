@@ -1,0 +1,37 @@
+.main-slider--wrapper {
+    background-color: $secondary-brand-color;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding-bottom: 80px;
+    .main-slider--nav {
+        position: absolute;
+        z-index: 1;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 2.5%;
+        pointer-events: none;
+        button {
+            @extend %bgImage;
+            pointer-events: all;
+            outline: none;
+            border: 1px solid transparent;
+            max-width: 70px;
+            max-height: 70px;
+            width: 4vw;
+            height: 4vw;
+            min-width: 20px;
+            min-height: 20px;
+            color: transparent;
+            &.owl-prev {
+                background-image: url(../img/misc/arrow-slider.png);
+                transform: scaleX(-1);
+            }
+            &.owl-next {
+                background-image: url(../img/misc/arrow-slider.png);
+            }
+        }
+    }
+}

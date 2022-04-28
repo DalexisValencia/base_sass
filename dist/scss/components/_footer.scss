@@ -1,0 +1,27 @@
+.homepage-footer {
+    background-color: $fourth-brand-color;
+    padding: 10px;
+    .homepage-footer--wrapper {
+        @extend %maxWidth;
+        display: flex;
+        justify-content: space-between;
+        span {
+            display: inline-block;
+            color: $sixth-brand-color;
+            font: {
+                size: 12px;
+                font-family: 'Montserrat-Regular';
+            }
+            @include media-xs {
+                width: 100%;
+                text-align: center;
+                &:first-child {
+                    margin-bottom: 10px;
+                }
+            }
+        }
+        @include media-xs {
+            flex-wrap: wrap;
+        }
+    }
+}
