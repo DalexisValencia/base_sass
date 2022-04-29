@@ -1,10 +1,10 @@
 <p align="center">
-  <h1 align="center"><b> Prueba de desarrollo Front-end Tambourine</b></h1>
+  <h1 align="center"><b>::Nombre del proyecto::</b></h1>
 </p>
 
 ## Tabla de contenido
 
-- [Comenzando](#comenzando-🚀)
+- [Comenzando](#comenzando)
 - [Requerimientos del sistema](#requerimientos-del-sistema-📋)
 - [Configuración](#configuración-🔧)
 - [Como Ejecutar](#como-ejecutar-🕹️)
@@ -12,7 +12,7 @@
 - [Colaboradores](#colaboradores-🏓)
 
 
-## Comenzando 🚀
+## Comenzando
 
 Este manual permitirá continuar manejando el flujo de desarrollo en el mantenimiento de este proyecto, tanto en el procesamiento de los estilos como en el manejo optimo de las imágenes.
 
