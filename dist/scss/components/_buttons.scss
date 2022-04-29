@@ -1,8 +1,4 @@
-input[type="button"].el-custom--button,
-input.el-custom--button,
-button[class*="el-custom"],
-a.el-custom--button,
-button.el-custom--button {
+%button {
     flex: 0 0 auto;
     align-items: center;
     display: inline-flex;
