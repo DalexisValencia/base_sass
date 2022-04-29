@@ -5,11 +5,11 @@
 ## Tabla de contenido
 
 - [Comenzando](#comenzando)
-- [Requerimientos del sistema](#requerimientos-del-sistema-📋)
-- [Configuración](#configuración-🔧)
-- [Como Ejecutar](#como-ejecutar-🕹️)
-- [Imagenes](#imagenes-🕹️)
-- [Colaboradores](#colaboradores-🏓)
+- [Requerimientos del sistema](#requerimientos-del-sistema)
+- [Configuración](#configuración)
+- [Como Ejecutar](#como-ejecutar)
+- [Imagenes](#imagenes)
+- [Colaboradores](#colaboradores)
 
 
 ## Comenzando
