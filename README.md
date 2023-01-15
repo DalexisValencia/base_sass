@@ -1,5 +1,5 @@
 <p align="center">
-  <h1 align="center">::Base de trabajo básica para FRONT-END::</h1>
+  <h1 align="center">::Front-end flow::</h1>
 </p>
 
 ## Tabla de contenido
