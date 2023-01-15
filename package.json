@@ -22,5 +22,8 @@
         "postcss": "^8.4.5",
         "postcss-cli": "^9.1.0",
         "sass": "^1.48.0"
+    },
+    "dependencies": {
+        "express": "^4.18.2"
     }
 }
