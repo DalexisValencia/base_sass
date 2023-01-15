@@ -1,5 +1,5 @@
 <p align="center">
-  <h1 align="center"><b>::Nombre del proyecto::</b></h1>
+  <h1 align="center">::Base de trabajo básica para FRONT-END::</h1>
 </p>
 
 ## Tabla de contenido
@@ -40,21 +40,34 @@ Abrir una terminal e ingresar a la carpeta raiz del theme del proyecto, en este 
 
     cd  /base-sass
 
-Ejecutar la siguiente tarea transpilar los estilos - una vez se ejecuta queda en modo reactivo, escuchando los cambios que se generen en alguno de los archivos scss o sass.*
+Ejecutar la siguiente tarea para iniciar el desarrollo con livereload y transpilar los estilos.
+<br/>
+- una vez se ejecuta queda en modo reactivo, escuchando los cambios que se generen en alguno de los archivos scss o sass.*
 
-    npm run build
+    npm run dev
 
 Para detener el anterior proceso solo se debe ejecutar **Ctrl + c**
 
 ## Imagenes
 
-_En este ejemplo las imágenes fueron optimizadas para escritorio y para móvil. Con esto cumplimos con el uso adecuado de la etiqueta picture._
+_Recomiendo estas páginas para optimizar imagenes:_
+
+[Optimizar .png](https://compresspng.com/)
+[Optimizar .jpg](https://compressjpeg.com/es/)
+
+_Para generar fuentes de iconos utilice:_
+
+[Icon Moon](https://icomoon.io/app/#/select)
 
 ### Organización
 
-- **slider:** Contenedor para las imagenes del slide principal.
-- **events:** Contenedor para las imagenes de los "slides" de eventos.
-- **misc:** Contenedor para los iconos.
+Si utiliza imagenes, se aconseja seguir las siguientes reglas para organizarlas:
+
+- **assets:** Contenedor para TODAS las imagenes, dentro de ella deberá organizar el contenido así:
+- **misc:** Contenedor para cualquier tipo de <b>craft</b> o adorno.
+- **bg:** Contenedor para las imagenes utilizadas como backgrounds.
+- **icons:** Contenedor para las imagenes <b>(.png o .svg)</b> utilizadas como iconos.
+
 
 ## Colaboradores
 
