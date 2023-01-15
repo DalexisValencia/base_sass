@@ -53,9 +53,10 @@ Para detener el anterior proceso solo se debe ejecutar **Ctrl + c**
 _Recomiendo estas páginas para optimizar imagenes:_
 
 [Optimizar .png](https://compresspng.com/)
+<br/>
 [Optimizar .jpg](https://compressjpeg.com/es/)
 
-_Para generar fuentes de iconos utilice:_
+_Para generar fuentes de iconos:_
 
 [Icon Moon](https://icomoon.io/app/#/select)
 
