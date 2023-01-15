@@ -1,12 +1,13 @@
 {
     "name": "base_sass",
-    "version": "1.0.0",
-    "description": "Código base para trabajar con sass",
+    "version": "2.0.0",
+    "description": "Código base para trabajar con sass y livereload",
     "main": "index.js",
     "scripts": {
         "sass": "sass --style=compressed dist/scss:dist/css",
         "prefix": "npm run sass && postcss dist/css/**/*.css --use=autoprefixer --dir dist/css --map",
-        "build": "onchange \"dist/scss/**/*.scss\" -- npm run prefix"
+        "build": "onchange \"dist/scss/**/*.scss\" -- npm run prefix",
+        "dev": "concurrently \"live-server\" \"npm run build\""
     },
     "browserslist": [
         "> 1%",
@@ -18,12 +19,14 @@
     "license": "ISC",
     "devDependencies": {
         "autoprefixer": "^10.4.2",
+        "nodemon": "^2.0.20",
         "onchange": "^7.1.0",
         "postcss": "^8.4.5",
         "postcss-cli": "^9.1.0",
         "sass": "^1.48.0"
     },
     "dependencies": {
-        "express": "^4.18.2"
+        "concurrently": "^7.6.0",
+        "live-server": "^1.2.2"
     }
 }
