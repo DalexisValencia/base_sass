@@ -6,13 +6,8 @@ $path: '../fonts';
 }
 
 @font-face {
-    font-family: 'TodaySHOP-Bold';
-    src: url('#{$path}/TodaySHOP-Bold.otf');
+    font-family: 'impact';
+    src: url('#{$path}/impact.ttf');
     font-display: fallback;
 }
 
-@font-face {
-    font-family: 'TodaySHOP-Regular.otf';
-    src: url('#{$path}/TodaySHOP-Regular');
-    font-display: fallback;
-}

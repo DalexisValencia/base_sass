@@ -18,12 +18,12 @@
     "author": "",
     "license": "ISC",
     "devDependencies": {
-        "autoprefixer": "^10.4.2",
+        "autoprefixer": "^10.4.16",
         "nodemon": "^2.0.20",
         "onchange": "^7.1.0",
-        "postcss": "^8.4.5",
+        "postcss": "^8.4.31",
         "postcss-cli": "^9.1.0",
-        "sass": "^1.48.0"
+        "sass": "^1.69.5"
     },
     "dependencies": {
         "concurrently": "^7.6.0",

@@ -1,3 +1,142 @@
 .footer {
-    background-color: transparent;
+    padding-top: 30px;
+    background-color: $primary-brand-color;
+    color: $sixth-brand-color;
+    * {
+        font-family: 'Montserrat-Medium';
+    }
+    div {
+        @extend %maxWidth;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    section {
+        h3 {
+            font: {
+                size: 30px;
+                family: 'impact';
+            }
+        }
+        &.newsletter {
+            width: 40%;
+            padding: 15px 15px 15px $body-horizontal-padding;
+            p {
+                margin: 20px 0;
+                padding-right: 30px;
+                font-family: 'Montserrat-Medium';
+                line-height: 18px;
+                font-size: 12px;
+            }
+            form {
+                width: 100%;
+                display: flex;
+                border: 2px solid $sixth-brand-color;
+                border-radius: 3px;
+                input, button {
+                    border-color: transparent;
+                    background-color: transparent;
+                    color: $sixth-brand-color;
+                    height: 40px;
+                    outline: none;
+                }
+                input {
+                    width: 100%;
+                    padding: 15px 20px;
+                    font-size: 14px;
+                    &:focus {
+                        color: rgba($sixth-brand-color, 0.65);
+                    }
+                    &::placeholder {
+                        color: $tertiary-brand-color;
+                    }
+                }
+                button {
+                    width: 55px;
+                    .arrow-left {
+                        display: inline-block;
+                        width: 20px;
+                        height: 20px;
+                        background-size: contain;
+                        background-repeat: no-repeat;
+                        background-position: center;
+                        background-image: url('../assets/iconos/arrow.svg');
+                    }
+                }
+            }
+        }
+        &.contact {
+            width: 40%;
+            padding: 15px;
+            font-family: 'Montserrat-Medium';
+            ul {
+                list-style: none;
+                padding: 0;
+                margin: 0;
+                margin-top: 20px;
+                li {
+                    margin-top: 10px;
+                    a {
+                        color: $sixth-brand-color;
+                        text-decoration: none;
+                        display: flex;
+                        align-items: center;
+                        font-size: 14px;
+                        .icon {
+                            width: 20px;
+                            height: 20px;
+                            display: block;
+                            background-size: contain;
+                            background-repeat: no-repeat;
+                            background-position: center;
+                            margin-right: 5px;
+                            &.email {
+                                background-image: url('../assets/iconos/contact/mail.svg');
+                            }
+                            &.phone {
+                                background-image: url('../assets/iconos/contact/phone.svg');
+                            }
+                            &.location {
+                                background-position: contain;
+                                background-image: url('../assets/iconos/contact/location.svg');
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        &.company-logo {
+            width: 20%;
+            padding: 0 15px;
+            padding-right: $body-horizontal-padding;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            img {
+                max-width: 250px;
+            }
+        }
+    }
+    .social-network {
+        padding: $body-horizontal-padding;
+        background-color: $secondary-brand-color;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 15px 20px;
+        margin-top: 30px;
+        ul {
+            list-style: none;
+            display: flex;
+            padding: 0;
+            margin: 0;
+            li {
+                padding: 0px 5px;
+                a {
+                    color: #ffffff;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
 }
