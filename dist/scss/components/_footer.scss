@@ -96,7 +96,6 @@
                                 background-image: url('../assets/iconos/contact/phone.svg');
                             }
                             &.location {
-                                background-position: contain;
                                 background-image: url('../assets/iconos/contact/location.svg');
                             }
                         }
@@ -135,6 +134,30 @@
                 a {
                     color: #ffffff;
                     text-decoration: none;
+                    &.icon {
+                        width: 20px;
+                        height: 20px;
+                        display: block;
+                        background-size: contain;
+                        background-repeat: no-repeat;
+                        background-position: center;
+                        margin-right: 5px;
+                        &.facebook {
+                            background-image: url('../assets/iconos/network/facebook.svg');
+                        }
+                        &.instagram {
+                            background-image: url('../assets/iconos/network/instagram.svg');
+                        }
+                        &.tit-tok {
+                            background-image: url('../assets/iconos/network/tik-tok.svg');
+                        }
+                        &.twitter {
+                            background-image: url('../assets/iconos/network/twitter.svg');
+                        }
+                        &.youtube {
+                            background-image: url('../assets/iconos/network/youtube.svg');
+                        }
+                    }
                 }
             }
         }
