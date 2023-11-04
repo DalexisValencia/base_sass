@@ -5,12 +5,14 @@
         @extend %maxWidth;
         display: flex;
         justify-content: end;
-        padding: 50px 0;
+
+        @include media-xs-range-1 {
+            overflow: hidden;
+        }
     }
 
     .home-page--heading {
-        padding: 10px 20px;
-        border: 1px dashed #595959;
+        padding: 50px 20px;
         width: 46vw;
 
         h1 {
@@ -24,6 +26,10 @@
 
             @include media-md-min {
                 font-size: 225px;
+            }
+
+            @include media-xs-range-1 {
+                font-size: 40vw;
             }
         }
 
@@ -39,12 +45,17 @@
             @include media-md-min {
                 font-size: 14px;
             }
+
+            @include media-xs-range-1 {
+                font-size: 3.6vw;
+            }
+
         }
 
         .home-page--btn-group {
             width: 100%;
             display: flex;
-            margin-top: 20px;
+            margin-top: 50px;
             justify-content: space-between;
 
             button {
@@ -64,11 +75,82 @@
                     font-size: 17px;
                     width: 45%;
                 }
+
+                @include media-xs-range-1 {
+                    width: 100%;
+                    margin-bottom: 15px;
+                    font-size: 17px;
+                }
+            }
+
+            @include media-xs-range-1 {
+                flex-wrap: wrap;
+                flex-direction: row;
             }
         }
 
         @include media-md-min {
             width: 550px;
+        }
+
+        @include media-xs-range-1 {
+            width: 100%;
+            z-index: 2;
+        }
+    }
+
+    .home-page--character {
+        display: flex;
+        align-items: end;
+        margin-top: -15px;
+        position: relative;
+
+        img {
+            position: relative;
+            width: 56vw;
+            z-index: 1;
+
+            @include media-md-min {
+                width: 650px;
+            }
+
+            @include media-xs-range-1 {
+                width: 142vw;
+            }
+        }
+
+        .absolute-text {
+            position: absolute;
+            display: none;
+
+            font: {
+                family: 'impact';
+            }
+
+            left: 10vw;
+            -webkit-text-stroke-width: 0.5px;
+            -webkit-text-stroke-color: black;
+            color: transparent;
+
+            &.text-1 {
+                color: transparent;
+                font-size: 9.5vw;
+                bottom: 8vw;
+                z-index: 2;
+            }
+
+            &.text-2 {
+                font-size: 9.4vw;
+                top: 23vw;
+                z-index: 1;
+            }
+        }
+
+        @include media-xs-range-1 {
+            position: absolute;
+            z-index: 0;
+            right: -68vw;
+            top: 1vw;
         }
     }
 }
