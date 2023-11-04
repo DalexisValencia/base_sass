@@ -1,6 +1,8 @@
 .main-header {
     z-index: 2;
     background-color: $secondary-brand-color;
+    position: relative;
+    z-index: 1;
     nav {
         width: 100%;
         @extend %maxWidth;

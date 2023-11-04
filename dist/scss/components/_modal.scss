@@ -8,7 +8,11 @@
     display: none; // flex
     justify-content: end;
     align-items: center;
+    &.active {
+        display: flex;
+    }
     .order-now {
+        position: relative;
         width: 100%;
         max-width: 600px;
         height: 100%;
@@ -17,22 +21,40 @@
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
+
         * {
             color: $sixth-brand-color;
         }
+
+        .close {
+            width: 30px;
+            height: 30px;
+            position: absolute;
+            border: 1px solid transparent;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-image: url('../assets/iconos/burger-menu-open.svg');
+            top: 20px;
+            right: 20px;
+        }
+
         h1 {
             font-family: 'impact';
             font-size: 38px;
         }
+
         p {
             font-size: 14px;
             font-family: 'Montserrat-Medium';
             margin: 20px 0;
             line-height: 24px;
         }
-        .order-now__platforms{
+
+        .order-now__platforms {
             margin: 25px 0;
             display: flex;
+
             button {
                 padding: 35px;
                 outline: 0;
@@ -40,31 +62,38 @@
                 text-align: center;
                 flex-basis: -moz-available;
                 color: $sixth-brand-color;
+
                 font: {
                     family: 'impact';
                     size: 30px;
                 }
+
                 background-color: $tertiary-brand-color;
                 color: $primary-brand-color;
-                &:hover, &.active {
+
+                &:hover,
+                &.active {
                     color: $sixth-brand-color;
-                    background-color: $primary-brand-color; 
+                    background-color: $primary-brand-color;
                 }
             }
         }
-        .order-now__download{
+
+        .order-now__download {
             width: 100%;
             background-color: $fifth-brand-color;
             color: $sixth-brand-color;
             padding: 20px;
             outline: 0;
             border: 0px;
+
             font: {
                 family: 'impact';
                 size: 30px;
             }
         }
-        @include media-xs-range-1{
+
+        @include media-xs-range-1 {
             max-width: 100%;
         }
     }
