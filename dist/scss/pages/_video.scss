@@ -5,8 +5,8 @@
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    max-height: 850px;
-
+    max-height: 640px;
+    background-color: $fifth-brand-color;
     .video-wrapper {
         display: flex;
         justify-content: center;
@@ -28,12 +28,15 @@
         align-items: center;
         position: absolute;
         z-index: 1;
-
+        &.hidden {
+            opacity: 0;
+            pointer-events: none;
+        }
         .video-heading {
             position: absolute;
-            left: 0;
+            left: $body-horizontal-padding;
             width: max-content;
-
+            z-index: 1;
             h2 {
                 color: $secondary-brand-color;
                 line-height: 0.85;
@@ -42,10 +45,18 @@
                     family: 'impact';
                     size: 14vw;
                 }
-
-                @include media-lg {
-                    font-size: 200px;
+                @include media-min-width {
+                    font-size: 180px;
                 }
+                @include media-xs-range-1 {
+                    font-size: 37vw;
+                }
+                span {
+                    display: block;
+                }
+            }
+            @include media-xs-range-1 {
+                left: 15px;
             }
         }
 
@@ -59,17 +70,33 @@
             background-image: url('../assets/video/play.svg');
             border: 1px solid transparent;
             outline: 0;
-
+            z-index: 1;
+            @include media-xs-range-1 {
+                width: 30vw;
+                height: 30vw;
+            }
         }
 
         .video-character {
             position: absolute;
             bottom: -6px;
-            right: 0;
+            right: $body-horizontal-padding;
 
             img {
-                width: 30vw;
+                width: 40vw;
+                max-width: 440px;
+                @include media-xs-range-1 {
+                    width: 99vw;
+                    max-width: unset;
+                }
+            }
+            @include media-xs-range-1 {
+                right: -46vw;
             }
         }
+    }
+
+    @include media-xs-range-1 {
+        height: 138vw;
     }
 }

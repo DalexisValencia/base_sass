@@ -80,6 +80,7 @@
                 top: 50px;
                 left: 0;
                 flex-direction: column;
+                z-index: 3;
             }
         }
         @include media-xs-range-1 {
