@@ -143,6 +143,12 @@
     }
 }
 
+@mixin media-md-min {
+    @media (min-width: 1200px) {
+        @content;
+    }
+}
+ 
 @mixin media-md-custom {
     @media (min-width: 691px) and (max-width: 1200px) {
         @content;
