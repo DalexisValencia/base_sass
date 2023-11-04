@@ -96,6 +96,7 @@
         @include media-xs-range-1 {
             width: 100%;
             z-index: 2;
+            margin-top: 30px;
         }
     }
 
@@ -115,7 +116,11 @@
             }
 
             @include media-xs-range-1 {
-                width: 142vw;
+                width: 160vw;
+            }
+
+            @include media-xs {
+                width: 150vw;
             }
         }
 
