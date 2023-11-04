@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="dist/css/main.css">
+</head>
+
+<body>
+    <main class="container">
+        <header class="main-header">
+            <nav>
+                <a href="" class="nav-logo">
+                    <picture>
+                        <source media="(max-width:690px)" srcset="dist/assets/logos/logo-mobile.svg" />
+                        <img src="dist/assets/logos/logo-desktop.svg" alt="" />
+                    </picture>
+                </a>
+                <ul class="main-menu">
+                    <li><a href="">Home</a></li>
+                    <li><a href="video.html">Trailer</a></li>
+                    <li><a href="">Video Juego</a></li>
+                    <li><a href="">Galería</a></li>
+                    <li><a href="">Revista</a></li>
+                    <li class="active"><a href="">Contácto</a></li>
+                </ul>
+                <button class="burger"></button>
+            </nav>
+        </header>
+
+        <section class="page contact-page">
+            <div class="contact-map"></div>
+            <div class="max-width-contact">
+                <form class="contact-form">
+                    <h3>TUS DATOS</h3>
+                    <input type="text" placeholder="Nombre">
+                    <input type="text" placeholder="Apellido">
+                    <input type="text" placeholder="Email">
+                    <input type="text" placeholder="Teléfono">
+                    <textarea type="text" placeholder="¿Cómo podemos ayudarte?"></textarea>
+                    <input type="submit" value="ENVIAR">
+                </form>
+            </section>
+            </div>
+
+        <section class="modal">
+            <div class="order-now">
+                <button class="close"></button>
+                <h1>ORDER NOW</h1>
+
+                <p class="order-now__description">
+                    Selecciona la plataforma de tu preferencia, realiza el pago, descarga el ejecutable y vive la experiencia de STILL ALIVE.
+                </p>
+
+                <div class="order-now__platforms">
+                    <button>XBOX</button>
+                    <button class="active">PC</button>
+                    <button>PLAY</button>
+                </div>
+
+                <button class="order-now__download">
+                    DESCARGAR
+                </button>
+
+                <p class="order-now__legal">
+                    Selecciona la plataforma de tu preferencia, realiza el pago, descarga el ejecutable y vive la experiencia de STILL ALIVE.
+                </p>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div>
+                <section class="newsletter">
+                    <h3>Suscríbete</h3>
+                    <p>
+                        Recibe contenido exclusivo de <b>STILL ALIVE</b>
+                        directamente en tu email.
+                    </p>
+
+                    <form action="">
+                        <input type="email" placeholder="EJ: d.alexis.valencia" id="">
+                        <button> <span class="icon arrow-left"></span> </button>
+                    </form>
+                </section>
+
+                <section class="contact">
+                    <h3>Contacto</h3>
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <span class="icon email"></span>
+                                Davalenciam@sanmateo.edu.co
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="icon phone"></span>
+                                Calle 69a #84a 23
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="icon location"></span>
+                                304 217 03 74
+                            </a>
+                        </li>
+                    </ul>
+                </section>
+
+                <section class="company-logo">
+                    <img src="dist/assets/logos/dbugLabs-white-desktop.svg" alt="" />
+                </section>
+            </div>
+
+            <section class="social-network">
+                <ul>
+                    <li><a href="" class="icon facebook"></a></li>
+                    <li><a href="" class="icon instagram"></a></li>
+                    <li><a href="" class="icon tit-tok"></a></li>
+                    <li><a href="" class="icon twitter"></a></li>
+                    <li><a href="" class="icon youtube"></a></li>
+                </ul>
+            </section>
+        </footer>
+    </main>
+</body>
+<script src="dist/js/jquery-3.7.1.min.js"></script>
+<script src="dist/js/main.js"></script>
+</html>

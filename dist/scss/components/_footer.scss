@@ -16,6 +16,9 @@
                 size: 30px;
                 family: 'impact';
             }
+            @include media-xs-range-1{
+                letter-spacing: 0.5px;
+            }
         }
         &.newsletter {
             width: 40%;
