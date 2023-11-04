@@ -63,6 +63,13 @@
                     }
                 }
             }
+            @include media-sm {
+                width: 50%;
+            }
+            @include media-xs-range-1{
+                width: 100%;
+                padding-left: 15px;
+            }
         }
         &.contact {
             width: 40%;
@@ -102,6 +109,12 @@
                     }
                 }
             }
+            @include media-sm {
+                width: 50%;
+            }
+            @include media-xs-range-1{
+                width: 100%;
+            }
         }
         &.company-logo {
             width: 20%;
@@ -112,6 +125,13 @@
             align-items: center;
             img {
                 max-width: 250px;
+                @include media-sm {
+                    width: 190px;
+                }
+            }
+            @include media-sm {
+                width: 100%;
+                padding-top: 15px;
             }
         }
     }
