@@ -23,7 +23,13 @@
             }
             @include media-sm {
                 width: 80px;
-             }
+            }
+            @include media-xs-range-1 {
+                padding: 0;
+                width: 40px;
+                left: $body-horizontal-padding-mobile;
+                background-color: transparent;
+            }
         }
         ul {
             margin: 0;
@@ -73,6 +79,9 @@
                 left: 0;
                 flex-direction: column;
             }
+        }
+        @include media-xs-range-1 {
+            padding-inline: $body-horizontal-padding-mobile;  
         }
     }
     button.burger {

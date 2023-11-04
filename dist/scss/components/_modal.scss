@@ -1,0 +1,68 @@
+.modal {
+    background-color: rgba($color: #000000, $alpha: 0.7);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none; // flex
+    justify-content: end;
+    align-items: center;
+    .order-now {
+        width: 100%;
+        max-width: 600px;
+        height: 100%;
+        background-color: $secondary-brand-color;
+        padding: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        * {
+            color: $sixth-brand-color;
+        }
+        h1 {
+            font-family: 'impact';
+            font-size: 38px;
+        }
+        p {
+            font-size: 14px;
+            font-family: 'Montserrat-Medium';
+            margin: 20px 0;
+            line-height: 24px;
+        }
+        .order-now__platforms{
+            margin: 25px 0;
+            display: flex;
+            button {
+                padding: 35px;
+                outline: 0;
+                border: 0px;
+                text-align: center;
+                flex-basis: -moz-available;
+                color: $sixth-brand-color;
+                font: {
+                    family: 'impact';
+                    size: 30px;
+                }
+                background-color: $tertiary-brand-color;
+                color: $primary-brand-color;
+                &:hover, &.active {
+                    color: $sixth-brand-color;
+                    background-color: $primary-brand-color; 
+                }
+            }
+        }
+        .order-now__download{
+            width: 100%;
+            background-color: $fifth-brand-color;
+            color: $sixth-brand-color;
+            padding: 20px;
+            outline: 0;
+            border: 0px;
+            font: {
+                family: 'impact';
+                size: 30px;
+            }
+        }
+    }
+}
