@@ -48,12 +48,12 @@
         }
 
         function initCarouselOnGamePage() {
-            $owl = $('.game-page--gallery.owl-carousel');
+            $owlGamePage = $('.game-page--gallery.owl-carousel');
             const carouselGameWrapper = $(".game-page--gallery");
             if (carouselGameWrapper.length >= 1) {
-                $owl.trigger('destroy.owl.carousel');
+               $owlGamePage .trigger('destroy.owl.carousel');
                 setTimeout(() => {
-                    $owl.owlCarousel(owlCarouselOptions);
+                    $owlGamePage .owlCarousel(owlCarouselOptions);
                 }, 500);
             }
         }
@@ -62,7 +62,7 @@
             $owl = $('.gallery-page--carousel.owl-carousel');
             const carouselGalleryWrapper = $(".gallery-page--carousel");
             if (carouselGalleryWrapper.length >= 1) {
-                $owl.trigger('destroy.owl.carousel');
+               $owl.trigger('destroy.owl.carousel');
                 setTimeout(() => {
                     $owl.owlCarousel(owlCarouselOptions);
                 }, 500);
