@@ -82,4 +82,8 @@
             flex-direction: column;
         }
     }
+
+    @include media-xs-range-1 {
+        padding: 20px 0;
+    }
 }
