@@ -24,44 +24,59 @@
             $("body").toggleClass("no-scroll");
         });
 
+        const owlCarouselOptions = {
+            loop: true,
+            margin: 10,
+            nav: true,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 3
+                },
+                1000: {
+                    items: 5
+                },
+                1280: {
+                    items: 6
+                },
+                1700: {
+                    items: 7
+                },
+            }
+        }
+
         function initCarouselOnGamePage() {
             $owl = $('.game-page--gallery.owl-carousel');
-            console.log("estoy aqui!")
             const carouselGameWrapper = $(".game-page--gallery");
             if (carouselGameWrapper.length >= 1) {
                 $owl.trigger('destroy.owl.carousel');
                 setTimeout(() => {
-                    $owl.owlCarousel({
-                        loop: true,
-                        margin: 10,
-                        nav: true,
-                        responsive: {
-                            0: {
-                                items: 1
-                            },
-                            600: {
-                                items: 3
-                            },
-                            1000: {
-                                items: 5
-                            },
-                            1280: {
-                                items: 6
-                            },
-                            1700: {
-                                items: 7
-                            },
-                        }
-                    })
+                    $owl.owlCarousel(owlCarouselOptions);
                 }, 500);
             }
         }
 
-        initCarouselOnGamePage();
+        function initCarouselOnGallery() {
+            $owl = $('.gallery-page--carousel.owl-carousel');
+            const carouselGalleryWrapper = $(".gallery-page--carousel");
+            if (carouselGalleryWrapper.length >= 1) {
+                $owl.trigger('destroy.owl.carousel');
+                setTimeout(() => {
+                    $owl.owlCarousel(owlCarouselOptions);
+                }, 500);
 
-        $(document).resize(function () {
-            // const currentPage = location.
-        });
+                $(".gallery-page--carousel .item").on("click", function(){
+                    const image = $(this).find("img").attr("src");
+                    $("#highligh-image").attr("src", image);
+                })
+            }
+        }
+
+        initCarouselOnGamePage();
+        initCarouselOnGallery();
+
 
 
     });
