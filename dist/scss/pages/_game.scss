@@ -27,19 +27,15 @@
                 width: 350px;
             }
 
-            /*@include media-xs-range-1 {
-                width: 160vw;
+            @include media-xs-range-1 {
+                width: auto;
             }
-
-            @include media-xs {
-                width: 150vw;
-            }*/
         }
 
         @include media-xs-range-1 {
             position: absolute;
             z-index: 0;
-            right: -68vw;
+            right: 37vw;
             bottom: 0;
         }
     }
@@ -47,6 +43,7 @@
     .game-page--heading {
         padding: 50px 20px;
         width: 100%;
+
         h1 {
             font-family: 'impact';
             font-size: 15vw;
@@ -60,7 +57,8 @@
             }
 
             @include media-xs-range-1 {
-                font-size: 40vw;
+                font-size: 37vw;
+                margin-left: unset;
 
                 span {
                     display: block;
@@ -93,12 +91,16 @@
             display: flex;
             align-items: center;
             padding: 0px 20px;
-            & > .owl-stage-outer {
+
+            &>.owl-stage-outer {
                 height: 100%;
+
                 .owl-stage {
                     height: 100%;
+
                     .owl-item {
                         height: 100%;
+
                         .item {
                             height: 100%;
                             background-color: gray;
@@ -106,7 +108,8 @@
                     }
                 }
             }
-            .owl-nav{
+
+            .owl-nav {
                 position: absolute;
                 z-index: 1;
                 width: 100%;
@@ -114,16 +117,19 @@
                 justify-content: space-between;
                 left: 0;
                 pointer-events: none;
+
                 button {
                     font-size: 40px;
                     pointer-events: all;
                 }
             }
+
             @include media-md-min {
                 height: 150px;
-                button {
+            }
 
-                }
+            @include media-xs-range-1 {
+                height: 70vw;
             }
         }
 
@@ -133,6 +139,17 @@
             color: $sixth-brand-color;
             border: 1px solid transparent;
             font-family: 'Montserrat-Medium';
+
+            @include media-xs-range-1 {
+                width: 100%;
+            }
+        }
+
+        @include media-xs-range-1 {
+            margin-top: 0;
+            padding: 25px 20px;
+            position: relative;
+            z-index: 1;
         }
     }
 }
