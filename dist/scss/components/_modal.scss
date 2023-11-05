@@ -20,14 +20,14 @@
         width: 100%;
         max-width: 600px;
         height: 100%;
-        background-color: $secondary-brand-color;
+        background-color: $orange-main-color;
         padding: 50px;
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
 
         * {
-            color: $sixth-brand-color;
+            color: $primary-brand-color;
         }
 
         .close {
@@ -78,7 +78,7 @@
                 &:hover,
                 &.active {
                     color: $sixth-brand-color;
-                    background-color: $primary-brand-color;
+                    background-color: $red-main-color;
                 }
                 @include media-xs-range-1{
                     width: 100%;
@@ -91,7 +91,7 @@
 
         .order-now__download {
             width: 100%;
-            background-color: $fifth-brand-color;
+            background-color: darken($red-main-color, 10);
             color: $sixth-brand-color;
             padding: 20px;
             outline: 0;

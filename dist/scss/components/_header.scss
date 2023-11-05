@@ -1,6 +1,6 @@
 .main-header {
     z-index: 2;
-    background-color: $secondary-brand-color;
+    background-color: $red-main-color;
     position: relative;
     z-index: 5;
     nav {
@@ -19,7 +19,7 @@
             position: absolute;
             left: 50px;
             top: 0;
-            background-color: $secondary-brand-color;
+            background-color: $red-main-color;
             picture {
                 width: 100%;
             }
@@ -43,10 +43,13 @@
                 padding: 15px;
                 cursor: pointer;
                 &.active, &:hover{
-                    background-color: $fourth-brand-color;
+                    background-color: $orange-main-color;
+                    a {
+                        color: $red-main-color;
+                    }
                 }
                 a {
-                    color: $sixth-brand-color;
+                    color: $pink-main-color;
                     text-decoration: none;
                     font: {
                         family: 'impact';
