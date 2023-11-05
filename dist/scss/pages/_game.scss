@@ -1,0 +1,106 @@
+.game-page {
+    background-color: $sixth-brand-color;
+
+    .game-page--wrapper {
+        @extend %maxWidth;
+        display: flex;
+
+        @include media-xs-range-1 {
+            position: relative;
+        }
+    }
+
+    .game-page--character {
+        display: flex;
+        align-items: end;
+        margin-top: -15px;
+        position: relative;
+
+        img {
+            position: relative;
+            width: 30vw;
+            z-index: 1;
+            -webkit-transform: scaleX(-1);
+            transform: scaleX(-1);
+
+            @include media-md-min {
+                width: 350px;
+            }
+
+            /*@include media-xs-range-1 {
+                width: 160vw;
+            }
+
+            @include media-xs {
+                width: 150vw;
+            }*/
+        }
+
+        @include media-xs-range-1 {
+            position: absolute;
+            z-index: 0;
+            right: -68vw;
+            bottom: 0;
+        }
+    }
+
+    .game-page--heading {
+        padding: 50px 20px;
+
+        h1 {
+            font-family: 'impact';
+            font-size: 15vw;
+            line-height: 0.85;
+            margin-left: -12vw;
+
+            @include media-md-min {
+                border: 1px solid red;
+                font-size: 193px;
+                margin-left: -195px;
+            }
+
+            @include media-xs-range-1 {
+                font-size: 40vw;
+
+                span {
+                    display: block;
+                }
+            }
+        }
+
+        p {
+            margin-top: 20px;
+            line-height: 1.3;
+
+            font: {
+                family: 'Montserrat-Medium';
+                size: 1.2vw;
+            }
+
+            @include media-md-min {
+                font-size: 14px;
+            }
+
+            @include media-xs-range-1 {
+                font-size: 3.6vw;
+            }
+        }
+
+        .game-page--gallery {
+            margin: 25px 0;
+            height: 15vw;
+            background-color: red;
+            @include media-md-min {
+                height: 150px;
+            }
+        }
+
+        .order-now__btn {
+            background-color: $fifth-brand-color;
+            padding: 10px 20px;
+            color: $sixth-brand-color;
+            border: 1px solid transparent;
+            font-family: 'Montserrat-Medium';
+        }
+    }
+}

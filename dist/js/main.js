@@ -10,6 +10,7 @@
         //open / close modal para descargar juego
         $('button.close').on("click", function () {
             $(".modal").toggleClass("active");
+            $("body").toggleClass("no-scroll");
         });
 
         $('.video-play').on("click", function () {
