@@ -46,7 +46,7 @@
 
     .game-page--heading {
         padding: 50px 20px;
-
+        width: 100%;
         h1 {
             font-family: 'impact';
             font-size: 15vw;
@@ -89,9 +89,41 @@
         .game-page--gallery {
             margin: 25px 0;
             height: 15vw;
-            background-color: red;
+            position: relative;
+            display: flex;
+            align-items: center;
+            padding: 0px 20px;
+            & > .owl-stage-outer {
+                height: 100%;
+                .owl-stage {
+                    height: 100%;
+                    .owl-item {
+                        height: 100%;
+                        .item {
+                            height: 100%;
+                            background-color: gray;
+                        }
+                    }
+                }
+            }
+            .owl-nav{
+                position: absolute;
+                z-index: 1;
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                left: 0;
+                pointer-events: none;
+                button {
+                    font-size: 40px;
+                    pointer-events: all;
+                }
+            }
             @include media-md-min {
                 height: 150px;
+                button {
+
+                }
             }
         }
 
