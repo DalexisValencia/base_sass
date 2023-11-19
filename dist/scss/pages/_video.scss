@@ -7,6 +7,30 @@
     overflow: hidden;
     max-height: 640px;
     background-color: #000;
+
+    &::before,
+    &::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        width: 701px;
+        height: 150px;
+        z-index: 1;
+        background-position: bottom;
+        @extend %bgImage;
+    }
+    &::before {
+        left: 0;
+        background-image: url('../assets/video/left-craft.svg');
+    }
+    &::after {
+        right: 0;
+        background-image: url('../assets/video/right-craft.svg');
+        @include media-xs-range-1 {
+            content: unset;
+        }
+    }
+
     .video-wrapper {
         display: flex;
         justify-content: center;
@@ -14,6 +38,7 @@
         position: relative;
         width: 100%;
         background-color: $fifth-brand-color;
+
         video {
             width: 100%;
         }
@@ -28,33 +53,41 @@
         align-items: center;
         position: absolute;
         z-index: 1;
+
         &.hidden {
             opacity: 0;
             pointer-events: none;
         }
+
         .video-heading {
             position: absolute;
             left: $body-horizontal-padding;
             width: max-content;
             z-index: 1;
+
             h2 {
-                color: $secondary-brand-color;
+                color: $yellow-main-color;
                 line-height: 0.85;
 
                 font: {
                     family: 'impact';
                     size: 14vw;
                 }
+
                 @include media-min-width {
                     font-size: 180px;
                 }
+
                 @include media-xs-range-1 {
                     font-size: 37vw;
                 }
+
                 span {
+                    color: rgba($pink-main-color, 0.7);
                     display: block;
                 }
             }
+
             @include media-xs-range-1 {
                 left: 15px;
             }
@@ -71,6 +104,7 @@
             border: 1px solid transparent;
             outline: 0;
             z-index: 1;
+
             @include media-xs-range-1 {
                 width: 30vw;
                 height: 30vw;
@@ -81,15 +115,18 @@
             position: absolute;
             bottom: -6px;
             right: $body-horizontal-padding;
+            transform: scaleX(-1);
 
             img {
                 width: 40vw;
                 max-width: 440px;
+
                 @include media-xs-range-1 {
                     width: 99vw;
                     max-width: unset;
                 }
             }
+
             @include media-xs-range-1 {
                 right: -46vw;
             }

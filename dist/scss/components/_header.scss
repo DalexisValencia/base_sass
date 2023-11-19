@@ -72,6 +72,7 @@
 
                     @include media-sm {
                         font-size: 16px;
+                        padding: 15px 10px;
                     }
 
                     @include media-xs-range-1 {
@@ -82,14 +83,9 @@
                     }
                 }
 
-                @include media-sm {
-                    padding: 15px 10px;
-                }
-
                 @include media-xs-range-1 {
                     width: 100%;
                     text-align: center;
-                    padding: 0;
                 }
             }
 
