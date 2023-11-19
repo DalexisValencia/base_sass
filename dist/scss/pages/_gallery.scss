@@ -1,6 +1,7 @@
 .gallery-page {
     padding: 50px 0;
-    background-color: $sixth-brand-color;
+    background: rgb(57, 56, 56);
+    background: radial-gradient(circle, rgba(57, 56, 56, 1) 25%, rgba(9, 10, 10, 1) 91%);
 
     .gallery-page--wrapper {
         @extend %maxWidth;
@@ -37,6 +38,7 @@
             h1 {
                 font-family: 'impact';
                 font-size: 50px;
+                color: $sixth-brand-color;
             }
 
             p {
@@ -72,6 +74,11 @@
             width: 100%;
             margin-top: 20px;
             height: 150px;
+            .item {
+                img {
+                    width: 100%;
+                }
+            }
             @include media-xs-range-1 {
                 height: 350px;
             }
