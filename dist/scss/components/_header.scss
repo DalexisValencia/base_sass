@@ -3,6 +3,7 @@
     background-color: $red-main-color;
     position: relative;
     z-index: 5;
+
     nav {
         width: 100%;
         @extend %maxWidth;
@@ -12,6 +13,7 @@
         padding-inline: $body-horizontal-padding;
         position: relative;
         min-height: 50px;
+
         a.nav-logo {
             display: block;
             width: 100px;
@@ -20,12 +22,15 @@
             left: 50px;
             top: 0;
             background-color: $red-main-color;
+
             picture {
                 width: 100%;
             }
+
             @include media-sm {
                 width: 80px;
             }
+
             @include media-xs-range-1 {
                 padding: 0;
                 width: 40px;
@@ -33,41 +38,58 @@
                 background-color: transparent;
             }
         }
+
         ul {
             margin: 0;
             padding: 0;
             list-style: none;
             display: flex;
             align-items: center;
+
             li {
-                padding: 15px;
                 cursor: pointer;
-                &.active, &:hover{
-                    background-color: $orange-main-color;
+
+                &.active,
+                &:hover {
+                    background-color: $yellow-main-color;
+
                     a {
                         color: $red-main-color;
                     }
                 }
+
                 a {
-                    color: $pink-main-color;
+                    padding: 15px;
+                    color: $sixth-brand-color;
                     text-decoration: none;
+                    height: 100%;
+                    display: block;
+
                     font: {
                         family: 'impact';
                         size: 18px;
                     }
+
                     @include media-sm {
                         font-size: 16px;
-                     }
-                     @include media-xs-range-1{
+                    }
+
+                    @include media-xs-range-1 {
                         font-size: 20px;
+                        display: block;
+                        width: 100%;
+                        padding: 15px 10px;
                     }
                 }
+
                 @include media-sm {
                     padding: 15px 10px;
-                 }
-                @include media-xs-range-1{
+                }
+
+                @include media-xs-range-1 {
                     width: 100%;
                     text-align: center;
+                    padding: 0;
                 }
             }
 
@@ -75,8 +97,9 @@
                 &:not(.active) {
                     display: none;
                 }
+
                 position: fixed;
-                background-color: rgba(0,0,0,0.7);
+                background-color: rgba(0, 0, 0, 0.7);
                 height: 100%;
                 width: 100%;
                 top: 50px;
@@ -86,25 +109,29 @@
                 z-index: 3;
             }
         }
+
         @include media-xs-range-1 {
-            padding-inline: $body-horizontal-padding-mobile;  
+            padding-inline: $body-horizontal-padding-mobile;
         }
     }
+
     button.burger {
-       outline: 0;
-       width: 40px;
-       height: 40px;
-       background-position: center;
-       background-size: contain;
-       background-repeat: no-repeat;
-       background-image: url('../assets/iconos/burger-menu.svg');
-       border: 1px solid transparent;
-       display: none;
-       &.open {
-        background-image: url('../assets/iconos/burger-menu-open.svg');
-       }
-       @include media-xs-range-1 {
-        display: block;
-       }
+        outline: 0;
+        width: 40px;
+        height: 40px;
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-image: url('../assets/iconos/burger-menu.svg');
+        border: 1px solid transparent;
+        display: none;
+
+        &.open {
+            background-image: url('../assets/iconos/burger-menu-open.svg');
+        }
+
+        @include media-xs-range-1 {
+            display: block;
+        }
     }
 }

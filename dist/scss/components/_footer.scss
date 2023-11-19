@@ -140,7 +140,7 @@
     }
     .social-network {
         padding: $body-horizontal-padding;
-        background-color: $orange-main-color;
+        background-color:darken($color: $pink-main-color, $amount: 5);;
         width: 100%;
         display: flex;
         justify-content: center;
