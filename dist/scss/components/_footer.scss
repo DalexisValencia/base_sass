@@ -2,6 +2,7 @@
     padding-top: 30px;
     background-color: $primary-brand-color;
     color: $sixth-brand-color;
+    border-top: 5px solid $red-main-color;
     * {
         font-family: 'Montserrat-Medium';
     }
@@ -12,6 +13,7 @@
     }
     section {
         h3 {
+            letter-spacing: 2px;
             font: {
                 size: 30px;
                 family: 'impact';

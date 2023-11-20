@@ -69,15 +69,23 @@
 
                 $(".gallery-page--carousel .item").on("click", function(){
                     const image = $(this).find("img").attr("src");
+                    const title = $(this).attr("data-attr-title");
+                    const description = $(this).attr("data-attr-description");
+
+                    $("#gallery-title").html(title || "Vacío");
+                    $("#gallery-description").html(description || "Vacío");
+                    const windSize = $(window).width();
                     $("#highligh-image").attr("src", image);
+
+                    if (windSize <= 690) {
+                        $( window ).scrollTop( 0 );
+                    }
                 })
             }
         }
 
         initCarouselOnGamePage();
         initCarouselOnGallery();
-
-
 
     });
 })(jQuery);
