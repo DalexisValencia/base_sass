@@ -28,7 +28,7 @@
 
             span {
                 display: block;
-                color: rgba($pink-main-color, 0.7);
+                color: $sixth-brand-color;
             }
 
             @include media-md-min {
