@@ -75,15 +75,25 @@
                 background-color: darken($red-main-color, 20);
                 padding: 10px 20px;
                 color: $sixth-brand-color;
+                padding: 25px;
+                border-radius: 50px;
+                overflow: hidden;
+                transition: 0.5s all;
+                font: {
+                    family: 'Montserrat-Medium';
+                    size: 1.4vw;
+                }
+
+                &:hover {
+                    background-color: darken($red-main-color, 30);
+                }
 
                 &.order-now__btn {
                     background-color: $yellow-main-color;
                     color: $fifth-brand-color;
-                }
-
-                font: {
-                    family: 'Montserrat-Medium';
-                    size: 1.4vw;
+                    &:hover {
+                        background-color: darken($yellow-main-color, 15);
+                    }
                 }
 
                 @include media-md-min {
@@ -176,15 +186,5 @@
             bottom: 0;
             left: -124px;
         }
-    }
-}
-
-@keyframes fadeIn {
-    0% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 1;
     }
 }

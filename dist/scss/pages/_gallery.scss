@@ -18,7 +18,7 @@
             border-bottom-right-radius: 50px;
             overflow: hidden;
             margin-top: 30px;
-
+            animation: fadeIn 4s;
             img {
                 width: 100%;
             }
@@ -39,10 +39,12 @@
                 font-family: 'impact';
                 font-size: 50px;
                 color: $sixth-brand-color;
+                animation: fadeIn 1s;
             }
 
             p {
                 color: $sixth-brand-color;
+                animation: fadeIn 1s;
                 font: {
                     size: 14px;
                     family: 'Montserrat-Medium';
@@ -64,6 +66,7 @@
         .gallery-page--related {
             margin-top: 15px;
             color: $sixth-brand-color;
+            animation: fadeIn 2s;
             h4 {
                 font-family: 'Montserrat-Medium';
                 font-size: 16px;

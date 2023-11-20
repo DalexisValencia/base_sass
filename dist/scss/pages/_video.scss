@@ -64,7 +64,7 @@
             left: $body-horizontal-padding;
             width: max-content;
             z-index: 1;
-
+            animation: fadeIn 1s;
             h2 {
                 color: $yellow-main-color;
                 line-height: 0.85;
@@ -104,7 +104,7 @@
             border: 1px solid transparent;
             outline: 0;
             z-index: 1;
-
+            animation: fadeIn 4s;
             @include media-xs-range-1 {
                 width: 30vw;
                 height: 30vw;
@@ -116,7 +116,7 @@
             bottom: -6px;
             right: $body-horizontal-padding;
             transform: scaleX(-1);
-
+            animation: fadeIn 1.5s;
             img {
                 width: 40vw;
                 max-width: 440px;
