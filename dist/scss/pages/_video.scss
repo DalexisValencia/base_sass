@@ -42,6 +42,19 @@
         video {
             width: 100%;
         }
+        .overlay-on-video {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0,0.8);
+            left: 0;
+            top: 0;
+            transition: 0.5s all;
+            &.hidden {
+                opacity: 0;
+                pointer-events: none
+            }
+        }
     }
 
     .video-overlay {
@@ -53,7 +66,7 @@
         align-items: center;
         position: absolute;
         z-index: 1;
-
+        transition: 0.5s all;
         &.hidden {
             opacity: 0;
             pointer-events: none;

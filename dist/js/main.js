@@ -16,6 +16,7 @@
         $('.video-play').on("click", function () {
             $("#trailer").trigger('play');
             $('.video-overlay').addClass('hidden')
+            $('.overlay-on-video').addClass('hidden')
         });
 
         $('.order-now__btn').on("click", function () {
@@ -39,10 +40,10 @@
                     items: 5
                 },
                 1280: {
-                    items: 6
+                    items: 5
                 },
                 1700: {
-                    items: 7
+                    items: 5
                 },
             }
         }
@@ -51,10 +52,8 @@
             $owlGamePage = $('.game-page--gallery.owl-carousel');
             const carouselGameWrapper = $(".game-page--gallery");
             if (carouselGameWrapper.length >= 1) {
-               $owlGamePage .trigger('destroy.owl.carousel');
-                setTimeout(() => {
-                    $owlGamePage .owlCarousel(owlCarouselOptions);
-                }, 500);
+                $owlGamePage.trigger('destroy.owl.carousel');
+                $owlGamePage.owlCarousel(owlCarouselOptions);
             }
         }
 
@@ -63,9 +62,7 @@
             const carouselGalleryWrapper = $(".gallery-page--carousel");
             if (carouselGalleryWrapper.length >= 1) {
                $owl.trigger('destroy.owl.carousel');
-                setTimeout(() => {
                     $owl.owlCarousel(owlCarouselOptions);
-                }, 500);
 
                 $(".gallery-page--carousel .item").on("click", function(){
                     const image = $(this).find("img").attr("src");
